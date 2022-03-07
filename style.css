@@ -65,3 +65,17 @@ p {
   font-family: var(--ff-ter);
   font-size: var(--fs-s);
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--sp-xs);
+  font-family: var(--ff-sec);
+  font-size: var(--fs-s);
+}
