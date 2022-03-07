@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+
+:root {
+  /* Whenever you use josefin Sans as a font, add font-weight (light or regular/bold) */
+  /* This should be regular font weight */
+  --ff-pri: "Josefin Sans", sans-serif;
+  /* This should be light font weight hen used) */
+  --ff-sec: "Josefin Sans", sans-serif;
+  --ff-ter: "Lexend", sans-serif;
+
+  /* For font seizing */
+  --fs-xs: 0.8rem;
+  --fs-s: 1.2rem;
+  --fs-m: clamp(1.1rem, 1vw + 0.8rem, 1.8rem);
+  --fs-l: clamp(1.7rem, 2.36vw + 1rem, 3.1rem);
+  --fs-xl: clamp(2.3rem, 3.54vw + 1rem, 4.2rem);
+
+  /* For colors */
+  --clr-bg: #f4f4f4;
+  --clr-pri: #373635;
+  --clr-sec: #e1d0bf;
+  --clr-blck: #000;
+  /* Maybe we add a new accent color */
+  --clr-acc: #e1d0bf;
+
+  /* For seizing in general */
+  --sp-xs: 0.5rem;
+  --sp-s: 1rem;
+  --sp-m: 2rem;
+  --sp-l: 4rem;
+  --sp-xl: 8rem;
+  --sp-xxl: 12rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: var(--ff-ter);
+}
+
+h1 {
+  font-family: var(--ff-pri);
+  font-weight: normal;
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-family: var(--ff-sec);
+  font-weight: lighter;
+  font-size: var(--fs-l);
+}
+
+p {
+  font-family: var(--ff-ter);
+  font-size: var(--fs-s);
+}
