@@ -108,7 +108,7 @@ p {
 }
 
 .bestproducts h2 {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -160,7 +160,7 @@ button {
 }
 
 .howitworks h2 {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -194,7 +194,7 @@ button {
   margin-bottom: 4rem;
 }
 .reviews h2 {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -239,19 +239,40 @@ button {
   height: 1.5rem;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.3rem;
+}
+
+.full {
+  background-image: url(svg/fulldot.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 1.1rem;
+}
+.empty {
+  background-image: url(svg/emptydot.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 1.1rem;
+}
+
 .companyinfo {
   display: flex;
   justify-content: space-between;
   background-color: var(--clr-sec);
   padding: 3rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .ingredients,
 .shipping,
 .packaging {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .plant {
@@ -273,10 +294,48 @@ button {
 }
 
 .upcycle {
-  background-image: url(svg/Refresh.svg);
+  background-image: url(svg/Refresh2.svg);
   background-size: auto;
   background-repeat: no-repeat;
   aspect-ratio: 1/1;
   width: 4rem;
   height: 4rem;
+}
+
+/* HOME PAGE MEDIA QUERIES*/
+
+@media screen and (max-width: 950px) {
+  .howgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviewlayout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .singlereview {
+    max-height: 25rem;
+  }
+
+  .singlereview img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .singlereview {
+    max-height: 28rem;
+  }
+
+  .singlereview img {
+    max-width: 40%;
+    height: auto;
+  }
+  .companyinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
 }
