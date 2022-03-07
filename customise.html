@@ -6,6 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customise Page</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body></body>
+</head>
+<body>
+
+  <main>
+
+<section id="form">
+
+<form name="customise" method="POST" data-netlify="true">
+
+  <div id="stepone">
+      <!-- STEP ONE: CHOOSE ESSENTIAL OILS -->
+    <h2>Step 1: Choose the essential oils</h2>
+    <p>We recommend maximum 2</p>
+
+<label>
+    <input type="checkbox" name="oil"/> Cedarwood
+    <input type="checkbox" name="oil"/> Sandalwood
+    <input type="checkbox" name="oil"/> Bergamot
+    <input type="checkbox" name="oil"/> Rosemary
+    <input type="checkbox" name="oil"/> Sweet orange
+    <input type="checkbox" name="oil"/> Ginger
+    <input type="checkbox" name="oil"/> Lavender
+    <input type="checkbox" name="oil"/> Cinnamon
+</label>
+
+      <button type="next">Next</button>
+
+    </div>
+
+    <div id="steptwo">
+      <!-- STEP TWO: CHOOSE COLOR -->
+    <h2>Step 2: Choose a color</h2>
+
+<label>  
+    <input type="radio" name="color"/> No Color
+    <input type="radio" name="color"/> Arctic White
+    <input type="radio" name="color"/> Black
+    <input type="radio" name="color"/> Candy Pink
+    <input type="radio" name="color"/> Ultramarine Blue
+    <input type="radio" name="color"/> Light Blue
+    <input type="radio" name="color"/> Purple Passion
+    <input type="radio" name="color"/> Orange
+    <input type="radio" name="color"/> Red Iron
+    <input type="radio" name="color"/> Yellow
+</label>
+
+      <button type="next">Next</button>
+
+    </div>
+
+    <div id="stepthree">
+      <!-- STEP THREE: CHOOSE SHAPE -->
+    <h2>Step 3: Choose a shape</h2>
+
+<label> 
+    <input type="radio" name="shape"/> Heart
+    <input type="radio" name="shape"/> Rectangular
+    <input type="radio" name="shape"/> Round
+    <input type="radio" name="shape"/> Square
+    <input type="radio" name="shape"/> Star
+    <input type="radio" name="shape"/> Oval
+</label>
+
+      <button type="next">Next</button>
+
+    </div>
+  </form>
+</section>
+</main>  
+  </body>
 </html>
