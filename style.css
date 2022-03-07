@@ -183,3 +183,75 @@ button {
   background-color: #e1d1bf;
   padding: 2rem;
 }
+
+
+/* CUSTOMISE PAGE */
+
+#customisebody img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#customisebody {
+  background-color: var(--clr-bg);
+  margin: var(--sp-l);
+}
+
+#customisemain h2 {
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: var(--sp-l);
+}
+
+/* step one */
+
+#stepone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+#title_subtitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  gap: var(--sp-xs) var(--sp-s);
+}
+
+/* step two */
+
+#steptwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+/* step three */
+
+#stepthree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
