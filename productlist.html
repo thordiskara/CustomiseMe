@@ -7,5 +7,50 @@
     <title>Product List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="productgrid">
+      <template id="productlistTemplate">
+        <article>
+          <img
+            class="soapImage"
+            src="http://technancy.dk/calming.jpeg"
+            alt="barpic"
+          />
+          <div class="soapinfo">
+            <p class="productname">Calming Soap</p>
+            <p class="price">DKK <span>55</span>,00</p>
+          </div>
+          <div class="buttons">
+            <a href="product.html"><button>VIEW PRODUCT</button></a>
+            <div class="shoppingbag"></div>
+          </div>
+        </article>
+      </template>
+    </main>
+    <section class="companyinfo">
+      <div class="ingredients">
+        <div class="plant"></div>
+        <div class="companytext">
+          <h3>Plant Based Ingredients</h3>
+          <p>Ingredients that have been cared for responisbly</p>
+        </div>
+      </div>
+      <div class="shipping">
+        <div class="car"></div>
+        <div class="companytext">
+          <h3>Free Shipping</h3>
+          <p>On orders over 350kr</p>
+        </div>
+      </div>
+      <div class="packaging">
+        <div class="upcycle"></div>
+        <div class="companytext">
+          <h3>Upcycling Packaging</h3>
+          <p>Normal everyday use household items to pack your soap in</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="productlist.js"></script>
+  </body>
 </html>
