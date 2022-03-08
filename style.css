@@ -154,7 +154,7 @@ nav {
 }
 
 nav.shown {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--clr-pri);
   padding-top: 1rem;
   display: flex;
   flex: 1 1 100%;
@@ -166,7 +166,7 @@ nav ul {
   flex-flow: column;
 }
 .banner {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--clr-pri);
   width: 90%;
   margin-left: 5%;
   padding-bottom: 0.5rem;
