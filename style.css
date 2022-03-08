@@ -172,6 +172,23 @@ nav ul {
   padding-bottom: 0.5rem;
 }
 
+/* Footer */
+footer {
+  background-color: var(--clr-pri);
+  font-family: var(--ff-ter);
+  font-size: var(--fs-s);
+  color: white;
+  display: grid;
+  padding: var(--sp-l);
+  gap: var(--sp-xl);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.copyright {
+  color: gray;
+}
+
 /* Media for burgermenu */
 
 @media (min-width: 1000px) {
@@ -211,6 +228,14 @@ nav ul {
   }
   .close {
     display: none;
+  }
+  footer {
+    display: flex;
+    gap: var(--sp-l);
+    justify-content: space-between;
+  }
+  .socials {
+    width: 20%;
   }
 }
 
