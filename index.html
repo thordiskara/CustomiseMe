@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <img src="svg/customiseme.svg" alt="logo" />
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="#0"><img src="svg/customiseme.svg" alt="logo" /></a>
         </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+          <img class="close" src="svg/close_black_24dp.svg" alt="close" />
+        </div>
+      </div>
+
+      <nav>
         <ul>
           <li>ABOUT US</li>
           <li>SHOP</li>
@@ -20,11 +27,9 @@
           <li>CONTACT</li>
           <li>WORKSHOP</li>
         </ul>
-        <div class="icons">
-          <p>icon1</p>
-          <p>icon2</p>
-        </div>
       </nav>
     </header>
+
+    <script src="burgermenu.js"></script>
   </body>
 </html>
