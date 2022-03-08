@@ -187,11 +187,13 @@ button {
 
 /* CUSTOMISE PAGE */
 
+/*
 #customisebody img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+*/
 
 #customisebody {
   background-color: var(--clr-bg);
@@ -230,10 +232,15 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: baseline;
-  align-content: center;
-  gap: var(--sp-xs) var(--sp-s);
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-xs);
 }
 
 /* step two */
@@ -254,4 +261,47 @@ form {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: var(--sp-m);
+}
+
+/* HIDE CHECKBOX AND RADIO */
+[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=checkbox] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=checkbox]:checked + img {
+  outline: 3px solid #373635;
+}
+
+form img {
+  display: block;
+  max-width: 25%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+  
+  /* CHECKBOX AND RADIO GRID */
+  .options {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: min-content;
+    gap: var(--sp-xs) var(--sp-s);
+  }
+
+  form img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+  }
 }
