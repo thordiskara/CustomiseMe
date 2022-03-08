@@ -69,22 +69,45 @@ p {
 
 /* CUSTOMISE PAGE */
 
-/*
-#customisebody img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-*/
-
 #customisebody {
     background-color: var(--clr-bg);
     margin: var(--sp-l);
   }
+
+#customisemain {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5rem;
+}  
+
+#header {
+    grid-row: 1 / 2;
+    position: relative;
+    text-align: center;
+    margin: -4rem;
+}
+
+#form {
+    grid-row: 2 / 3;
+}
   
-  #customisemain h2 {
+#customisemain h1, #customisemain h2 {
     text-transform: uppercase;
   }
+
+#header img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}  
+
+#header_text {
+    position: absolute;
+    color: var(--clr-bg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   
   form {
     display: flex;
@@ -162,6 +185,14 @@ p {
     justify-content: space-around;
     gap: var(--sp-m);
   }
+
+  #stepthree img {
+    display: block;
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+  }
+
   
   /* HIDE CHECKBOX AND RADIO */
   [type=checkbox] {
