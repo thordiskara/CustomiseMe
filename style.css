@@ -95,6 +95,7 @@ p {
 }
 
 /* NAV */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -107,6 +108,11 @@ nav ul {
   gap: var(--sp-xs);
   font-family: var(--ff-sec);
   font-size: var(--fs-s);
+}
+
+nav a {
+  color: var(--clr-pri);
+  text-decoration: none;
 }
 .navflex {
   display: flex;
@@ -160,10 +166,10 @@ nav ul {
   flex-flow: column;
 }
 .banner {
-  padding: 2%;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   width: 90%;
   margin-left: 5%;
+  padding-bottom: 0.5rem;
 }
 
 /* Media for burgermenu */
@@ -181,7 +187,6 @@ nav ul {
     align-items: center;
     gap: var(--sp-s);
   }
-
   .navflex {
     display: flex;
     justify-content: space-between;
@@ -213,10 +218,10 @@ nav ul {
   nav ul li {
     font-size: var(--fs-m);
   }
+}
 
- 
 /* HOME PAGE */
-.banner {
+.images {
   display: flex;
   justify-content: center;
 }
