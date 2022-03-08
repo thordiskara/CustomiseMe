@@ -1,0 +1,16 @@
+/* mobile view */
+#soap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15rem;
+}
+
+.soapImage {
+  display: block;
+  max-width: 100%;
+}
+#viewsoap {
+  border: 5px solid rgb(225, 209, 191);
+  background-color: rgb(225, 209, 191);
+  margin-right: 20rem;
+}
