@@ -8,9 +8,9 @@ function toggleMenu() {
   const menu = ul.classList.contains("shown");
 
   if (menu) {
-    btn.classList.add("open");
+    btn.src = "svg/close_black_24dp.svg";
   } else {
-    btn.classList.remove("open");
+    btn.src = "svg/menu_black_24dp.svg";
   }
 }
 
