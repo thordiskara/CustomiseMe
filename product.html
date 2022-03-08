@@ -7,5 +7,121 @@
     <title>Single Product</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="index.html"><img src="svg/customiseme.svg" alt="logo" /></a>
+        </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+          <li><a href="index.html">INGREDIENS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+          <li><a href="index.html">WORKSHOP</a></li>
+        </ul>
+      </nav>
+      <div class="navicons">
+        <img src="svg/ShoppingBag.svg" alt="shoppingbag" />
+        <img src="svg/profile.svg" alt="profile" />
+      </div>
+    </header>
+
+    <main>
+      <section class="singlesoap">
+        <div class="soapcontainer">
+          <img src="img/IMG_2625.jpg" alt="soap" />
+        </div>
+        <div class="soapinfo">
+          <h2>Energizing Soap</h2>
+          <p class="price">DKK 55,00</p>
+          <p><span>COLOR</span> Candy Pink</p>
+          <p><span>WEIGHT</span> Approx. 88gr</p>
+          <p><span>AVAILABILITY</span> In Stock</p>
+          <p>
+            <span>INGREDIENTS</span> Coconut oil* (Cocos Nucifer oil), Olive
+            oil* (Olea Europea oil), Shea butter* (Butyrospermum Parkii),
+            Distilled water
+          </p>
+          <p>
+            <span>ESSENTIAL OILS</span> Bergamot (Citrus Aurantium Bergamia)*
+            and Rosemary (Rosmarinus Officinalis)*.
+          </p>
+          <button class="basket">ADD TO BASKET</button>
+          <input
+            class="quant"
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            value="1"
+          />
+        </div>
+      </section>
+
+      <section class="related">
+        <h3>RELATED PRODUCTS</h3>
+        <div class="relatedgrid">
+          <article>
+            <img src="img/IMG_2623.jpg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Calming Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/IMG_2624.jpg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Energizing Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/IMG_2625.jpg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Harmonising Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/IMG_2627.jpg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Strengthening Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+        </div>
+        <div class="dots">
+          <div class="full"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+        </div>
+      </section>
+    </main>
+    <script src="burgermenu.js"></script>
+  </body>
 </html>
