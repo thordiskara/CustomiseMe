@@ -1,19 +1,18 @@
 /* mobile view */
-#soap {
+/* #soap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15rem;
-}
+  /* grid-gap: 15rem; */
 
 .soapImage {
   display: block;
   max-width: 100%;
 }
-#viewsoap {
+/* #viewsoap {
   border: 5px solid rgb(225, 209, 191);
   background-color: rgb(225, 209, 191);
   margin-right: 20rem;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
@@ -84,6 +83,11 @@ h3 {
   font-weight: normal;
   font-size: var(--fs-s);
 }
+h4 {
+  font-family: var(--ff-sec);
+  font-weight: normal;
+  font-size: var(--fs-xs);
+}
 
 p {
   font-family: var(--ff-ter);
@@ -145,6 +149,19 @@ article img {
 .soapinfo {
   border-bottom: var(--clr-blck) 1px solid;
 }
+.soapinfor {
+  border-bottom: var(--clr-blck) 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding: 1rem;
+}
+/* .buttonss {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding: 1rem;
+} */
 
 .buttons {
   display: flex;
@@ -171,6 +188,15 @@ button {
   width: 10%;
   height: 10%;
   margin-right: 0.5rem;
+}
+.shoppingbag {
+  background-image: url(svg/Shopping-Bag.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1.2;
+  width: 25px;
+  height: 100px;
+  margin-right: 1px;
 }
 
 .howitworks h2 {

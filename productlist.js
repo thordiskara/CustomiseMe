@@ -24,7 +24,7 @@ function showSoap(soap) {
   // copying the template
   const copy = template.cloneNode(true);
   copy.querySelector("img").src = `${soap.images}`;
-  copy.querySelector("h3").textContent = `${soap.name}`;
+  copy.querySelector(".productname").textContent = `${soap.name}`;
   copy.querySelector("span").textContent = `${soap.price}`;
   copy.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
 
