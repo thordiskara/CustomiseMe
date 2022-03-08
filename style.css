@@ -94,6 +94,127 @@ p {
   font-size: var(--fs-s);
 }
 
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--sp-xs);
+  font-family: var(--ff-sec);
+  font-size: var(--fs-s);
+}
+.navflex {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--sp-m);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  display: block;
+  min-width: 60px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.close {
+  background: transparent;
+  border: none;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.navicons {
+  display: none;
+}
+
+.togglebuttonflex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+nav.shown {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+.banner {
+  padding: 2%;
+  border-bottom: 2px solid #000;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* Media for burgermenu */
+
+@media (min-width: 1000px) {
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+  .navicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-s);
+  }
+
+  .navflex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-flow: row;
+    gap: var(--sp-s);
+  }
+
+  .logo {
+    width: 6%;
+  }
+  nav {
+    display: block;
+    flex-flow: row;
+  }
+
+  /* burgermenu */
+  .toggle-btn {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  nav ul li {
+    font-size: var(--fs-m);
+  }
+
+ 
 /* HOME PAGE */
 .banner {
   display: flex;
