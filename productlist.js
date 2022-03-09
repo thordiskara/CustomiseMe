@@ -27,6 +27,9 @@ function showSoap(soap) {
   copy.querySelector(".productname").textContent = `${soap.name}`;
   copy.querySelector("span").textContent = `${soap.price}`;
   copy.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
+  copy
+    .querySelector(".buttonstyle")
+    .setAttribute("href", `product.html?id=${soap._id}`);
 
   // grabing parent
   const parent = document.querySelector("main");

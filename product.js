@@ -23,7 +23,7 @@ function showSoap(soap) {
   document.querySelector(".soapcontainer img").src = soap.images;
   document.querySelector(".color").textContent = soap.color;
   document.querySelector(".weight").textContent = soap.weight;
-  document.querySelector(".availability").textContent = soap.availability;
+  document.querySelector(".availability").textContent = soap.availablity;
   document.querySelector(".ingredients").textContent = soap.ingredients;
   document.querySelector(".essential").textContent = soap.essentialoils;
 }
