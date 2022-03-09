@@ -139,10 +139,21 @@ p {
   gap: 1.5rem;
   justify-content: center;
 }
+.productgridmain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 200px));
+  grid-column-gap: 1.5rem;
+  justify-content: center;
+}
 
 article img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
+}
+.soapImage {
+  width: 100%;
+  height: 270px;
   object-fit: cover;
 }
 
