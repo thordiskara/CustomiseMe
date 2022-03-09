@@ -7,5 +7,177 @@
     <title>Single Product</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="index.html"><img src="svg/customiseme.svg" alt="logo" /></a>
+        </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+          <li><a href="index.html">INGREDIENS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+          <li><a href="index.html">WORKSHOP</a></li>
+        </ul>
+      </nav>
+      <div class="navicons">
+        <img src="svg/ShoppingBag.svg" alt="shoppingbag" />
+        <img src="svg/profile.svg" alt="profile" />
+      </div>
+    </header>
+
+    <main>
+      <section class="singlesoap">
+        <div class="soapcontainer">
+          <img src="img/IMG_2625.jpg" alt="soap" />
+        </div>
+        <div class="soapinfo">
+          <h2 class="soapname">Energizing Soap</h2>
+
+          <div class="pricebox">
+            <p>DKK</p>
+            <p class="price">DKK 55,00</p>
+          </div>
+
+          <div class="colorbox">
+            <h4>COLOR</h4>
+            <p class="color">Candy Pink</p>
+          </div>
+
+          <div class="weightbox">
+            <h4>WEIGHT</h4>
+            <p class="weight">Approx. 88gr</p>
+          </div>
+
+          <div class="availbox">
+            <h4>AVAILABILITY</h4>
+            <p class="availability">In Stock</p>
+          </div>
+
+          <div class="ingredbox">
+            <h4>INGREDIENTS</h4>
+            <p class="ingredients">
+              Coconut oil* (Cocos Nucifer oil), Olive oil* (Olea Europea oil),
+              Shea butter* (Butyrospermum Parkii), Distilled water
+            </p>
+          </div>
+
+          <div class="essentialbox">
+            <h4>ESSENTIAL OILS</h4>
+            <p class="essential">
+              Bergamot (Citrus Aurantium Bergamia)* and Rosemary (Rosmarinus
+              Officinalis)*.
+            </p>
+          </div>
+
+          <button class="basket">ADD TO BASKET</button>
+          <input
+            class="quant"
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            value="1"
+          />
+        </div>
+      </section>
+
+      <section class="related">
+        <h3>RELATED PRODUCTS</h3>
+        <div class="relatedgrid">
+          <article>
+            <img src="img/newsoapphotos/soap2.jpeg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Strengthening Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/newsoapphotos/soap7.jpeg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Rosemary Bloom Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/newsoapphotos/soap13.jpeg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Harmonising Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+          <article>
+            <img src="img/newsoapphotos/soap3.jpeg" alt="barpic" />
+            <div class="soapinfo">
+              <p class="productname">Patchouli Soap</p>
+              <p class="price">DKK 55,00</p>
+            </div>
+            <div class="buttons">
+              <button>VIEW PRODUCT</button>
+              <div class="soppingbag"></div>
+            </div>
+          </article>
+        </div>
+        <div class="dots">
+          <div class="full"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="#0"><img src="svg/whitelogo.svg" alt="whitelogo" /></a>
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <ul>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>Shipping & Delivery</li>
+        <li>Cookie & Privacy Policy</li>
+      </ul>
+      <div>
+        <p>
+          CustomiseMe ApS <br /><br />
+          Falen 21D, 2TV 5000 Odense C info@customiseme.dk
+          <br /><br />
+          CVR: 42657603
+        </p>
+      </div>
+      <div class="socials">
+        <p>Our socials</p>
+        <a href="https://www.facebook.com/customisemedk"
+          ><img src="svg/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/customisemedk/"
+          ><img src="svg/instagram.svg" alt="instagram"
+        /></a>
+        <br /><br />
+        <p class="copyright">Copyright &copy; 2022 CustomiseMe</p>
+      </div>
+    </footer>
+    <script src="burgermenu.js"></script>
+    <script src="product.js"></script>
+  </body>
 </html>

@@ -8,21 +8,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="#0"><img src="svg/customiseme.svg" alt="logo" /></a>
+        </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+          <li><a href="index.html">INGREDIENS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+          <li><a href="index.html">WORKSHOP</a></li>
+        </ul>
+      </nav>
+      <div class="navicons">
+        <img src="svg/ShoppingBag.svg" alt="shoppingbag" />
+        <img src="svg/profile.svg" alt="profile" />
+      </div>
+    </header>
+
     <main>
-      <section class="banner">
+      <section class="images">
         <div class="frame">
-          <a href="productlist.html"><h1>BUY SOAP</h1></a>
-          <img
-            src="img/sincerely-media-WnAWIVf1Md8-unsplash.jpg"
-            alt="Buy Soap"
-          />
+          <a href="productlist.html">
+            <h1>BUY SOAP</h1>
+            <img
+              src="img/sincerely-media-WnAWIVf1Md8-unsplash.jpg"
+              alt="Buy Soap"
+            />
+          </a>
         </div>
         <div class="frame">
-          <a href="customise.html"><h1>CREATE SOAP</h1></a>
-          <img
-            src="img/kadarius-seegars-Mxy5gokl8mE-unsplash.jpg"
-            alt="Create Soap"
-          />
+          <a href="customise.html">
+            <h1>CREATE SOAP</h1>
+            <img
+              src="img/kadarius-seegars-Mxy5gokl8mE-unsplash.jpg"
+              alt="Create Soap"
+            />
+          </a>
         </div>
       </section>
 
@@ -30,9 +59,9 @@
         <h2>BEST PRODUCTS</h2>
         <div class="productgrid">
           <article>
-            <img src="img/IMG_2623.jpg" alt="barpic" />
+            <img src="img/newsoapphotos/soap2.jpeg" alt="barpic" />
             <div class="soapinfo">
-              <p class="productname">Calming Soap</p>
+              <p class="productname">Strengthening Soap</p>
               <p class="price">DKK 55,00</p>
             </div>
             <div class="buttons">
@@ -41,9 +70,9 @@
             </div>
           </article>
           <article>
-            <img src="img/IMG_2624.jpg" alt="barpic" />
+            <img src="img/newsoapphotos/soap7.jpeg" alt="barpic" />
             <div class="soapinfo">
-              <p class="productname">Calming Soap</p>
+              <p class="productname">Rosemary Bloom Soap</p>
               <p class="price">DKK 55,00</p>
             </div>
             <div class="buttons">
@@ -52,9 +81,9 @@
             </div>
           </article>
           <article>
-            <img src="img/IMG_2625.jpg" alt="barpic" />
+            <img src="img/newsoapphotos/soap13.jpeg" alt="barpic" />
             <div class="soapinfo">
-              <p class="productname">Calming Soap</p>
+              <p class="productname">Harmonising Soap</p>
               <p class="price">DKK 55,00</p>
             </div>
             <div class="buttons">
@@ -63,9 +92,9 @@
             </div>
           </article>
           <article>
-            <img src="img/IMG_2627.jpg" alt="barpic" />
+            <img src="img/newsoapphotos/soap3.jpeg" alt="barpic" />
             <div class="soapinfo">
-              <p class="productname">Calming Soap</p>
+              <p class="productname">Patchouli Soap</p>
               <p class="price">DKK 55,00</p>
             </div>
             <div class="buttons">
@@ -74,9 +103,9 @@
             </div>
           </article>
           <article>
-            <img src="img/IMG_2626.jpg" alt="barpic" />
+            <img src="img/newsoapphotos/soap11.jpeg" alt="barpic" />
             <div class="soapinfo">
-              <p class="productname">Calming Soap</p>
+              <p class="productname">Marseille Soap</p>
               <p class="price">DKK 55,00</p>
             </div>
             <div class="buttons">
@@ -91,22 +120,22 @@
         <h2>HOW IT WORKS</h2>
         <div class="howgrid">
           <article>
-            <img src="" alt="svg" />
+            <img src="svg/user.svg" alt="svg" />
             <h3>SIGN UP</h3>
             <p>Let's start by creating an account</p>
           </article>
           <article>
-            <img src="" alt="svg" />
+            <img src="svg/custom.svg" alt="svg" />
             <h3>CUSTOMISE</h3>
             <p>Go nuts and create something unique and YOURS</p>
           </article>
           <article>
-            <img src="" alt="svg" />
+            <img src="svg/truck.svg" alt="svg" />
             <h3>PLACE YOUR ORDER</h3>
             <p>When you are done remember to place the order</p>
           </article>
           <article>
-            <img src="" alt="svg" />
+            <img src="svg/house.svg" alt="svg" />
             <h3>RECEIVE IT AT HOME</h3>
             <p>Kudos you finished. Time to relax while we do our magic</p>
           </article>
@@ -121,10 +150,11 @@
             <div class="textcontainer">
               <p>
                 This product is amazing. My hands feel so soft and I'm so happy
-                I could choose my own scent! Highly recommended
+                I could choose my own scent! Highly recommended. <br />
+                <br />
+                - Gareth
               </p>
-              <p>- Gareth</p>
-              <div class="stars"></div>
+              <div class="stars5"></div>
             </div>
           </article>
           <article class="singlereview">
@@ -132,32 +162,77 @@
             <div class="textcontainer">
               <p>
                 Love these soapes! I ordered four with the sandlewood and orange
-                oils and my hands smell great.
+                oils and my hands smell great. <br />
+                <br />
+                - Laura
               </p>
-              <p>- Laura</p>
-              <div class="stars"></div>
+              <div class="stars4"></div>
             </div>
           </article>
+        </div>
+        <div class="dots">
+          <div class="full"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
         </div>
       </section>
 
       <section class="companyinfo">
         <div class="ingredients">
           <div class="plant"></div>
-          <h3>Plant Based Ingredients</h3>
-          <p>Ingredients that have been cared for responisbly</p>
+          <div class="companytext">
+            <h3>Plant Based Ingredients</h3>
+            <p>Ingredients that have been cared for responisbly</p>
+          </div>
         </div>
         <div class="shipping">
           <div class="car"></div>
-          <h3>Free Shipping</h3>
-          <p>On orders over 350kr</p>
+          <div class="companytext">
+            <h3>Free Shipping</h3>
+            <p>On orders over 350kr</p>
+          </div>
         </div>
         <div class="packaging">
           <div class="upcycle"></div>
-          <h3>Upcycling Packaging</h3>
-          <p>Normal everyday use household items to pack your soap in</p>
+          <div class="companytext">
+            <h3>Upcycling Packaging</h3>
+            <p>Normal everyday use household items to pack your soap in</p>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div>
+        <a href="#0"><img src="svg/whitelogo.svg" alt="whitelogo" /></a>
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <ul>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>Shipping & Delivery</li>
+        <li>Cookie & Privacy Policy</li>
+      </ul>
+      <div>
+        <p>
+          CustomiseMe ApS <br /><br />
+          Falen 21D, 2TV 5000 Odense C info@customiseme.dk
+          <br /><br />
+          CVR: 42657603
+        </p>
+      </div>
+      <div class="socials">
+        <p>Our socials</p>
+        <a href="https://www.facebook.com/customisemedk"
+          ><img src="svg/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/customisemedk/"
+          ><img src="svg/instagram.svg" alt="instagram"
+        /></a>
+        <br /><br />
+        <p class="copyright">Copyright &copy; 2022 CustomiseMe</p>
+      </div>
+    </footer>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

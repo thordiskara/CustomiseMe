@@ -7,5 +7,108 @@
     <title>Product List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="index.html"><img src="svg/customiseme.svg" alt="logo" /></a>
+        </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+          <li><a href="index.html">INGREDIENS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+          <li><a href="index.html">WORKSHOP</a></li>
+        </ul>
+      </nav>
+      <div class="navicons">
+        <img src="svg/ShoppingBag.svg" alt="shoppingbag" />
+        <img src="svg/profile.svg" alt="profile" />
+      </div>
+    </header>
+    <h2 id="shopname">SHOP</h2>
+    <main class="productgridmain">
+      <template id="productlistTemplate">
+        <article>
+          <a href="product.html"
+            ><img
+              class="soapImage"
+              src="http://thordiskara.com/newsoapphotos/soap1.jpeg"
+              alt="barpic"
+          /></a>
+          <div class="soapinfo">
+            <p class="productname">Calming Soap</p>
+            <p class="price">DKK <span>55</span>,00</p>
+          </div>
+          <div class="buttons">
+            <a href="product.html"><button>VIEW PRODUCT</button></a>
+            <div class="shoppingbag"></div>
+          </div>
+        </article>
+      </template>
+    </main>
+    <section class="companyinfo">
+      <div class="ingredients">
+        <div class="plant"></div>
+        <div class="companytext">
+          <h3>Plant Based Ingredients</h3>
+          <p>Ingredients that have been cared for responisbly</p>
+        </div>
+      </div>
+      <div class="shipping">
+        <div class="car"></div>
+        <div class="companytext">
+          <h3>Free Shipping</h3>
+          <p>On orders over 350kr</p>
+        </div>
+      </div>
+      <div class="packaging">
+        <div class="upcycle"></div>
+        <div class="companytext">
+          <h3>Upcycling Packaging</h3>
+          <p>Normal everyday use household items to pack your soap in</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="#0"><img src="svg/whitelogo.svg" alt="whitelogo" /></a>
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <ul>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>Shipping & Delivery</li>
+        <li>Cookie & Privacy Policy</li>
+      </ul>
+      <div>
+        <p>
+          CustomiseMe ApS <br /><br />
+          Falen 21D, 2TV 5000 Odense C info@customiseme.dk
+          <br /><br />
+          CVR: 42657603
+        </p>
+      </div>
+      <div class="socials">
+        <p>Our socials</p>
+        <a href="https://www.facebook.com/customisemedk"
+          ><img src="svg/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/customisemedk/"
+          ><img src="svg/instagram.svg" alt="instagram"
+        /></a>
+        <br /><br />
+        <p class="copyright">Copyright &copy; 2022 CustomiseMe</p>
+      </div>
+    </footer>
+
+    <script src="productlist.js"></script>
+    <script src="burgermenu.js"></script>
+  </body>
 </html>
