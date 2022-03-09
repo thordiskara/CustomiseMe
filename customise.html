@@ -6,225 +6,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customise Page</title>
     <link rel="stylesheet" href="customise.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <header class="banner">
+      <div class="navflex">
+        <div class="logo">
+          <a href="#0"><img src="svg/customiseme.svg" alt="logo" /></a>
+        </div>
+        <div class="togglebuttonflex">
+          <img class="toggle-btn" src="svg/menu_black_24dp.svg" alt="menu" />
+        </div>
+      </div>
 
-  <main id="customisemain">
+      <nav>
+        <ul>
+          <li><a href="index.html">ABOUT US</a></li>
+          <li><a href="productlist.html">SHOP</a></li>
+          <li><a href="index.html">INGREDIENS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+          <li><a href="index.html">WORKSHOP</a></li>
+        </ul>
+      </nav>
+      <div class="navicons">
+        <img src="svg/ShoppingBag.svg" alt="shoppingbag" />
+        <img src="svg/profile.svg" alt="profile" />
+      </div>
+    </header>
+    <main id="customisemain">
+      <div id="header">
+        <img src="img/header.jpg" alt="header" />
+        <div id="header_text">
+          <h1>Create your own soap</h1>
+        </div>
+      </div>
 
-<div id="header">   
-    <img src="img/header.jpg" alt="header">
-      <div id="header_text">
-        <h1>Create your own soap</h1>
-  </div>
-  </div> 
+      <div id="explanation">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
 
-<div id="explanation">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+      <form name="customise" method="POST" data-netlify="true">
+        <!-- STEP ONE: CHOOSE ESSENTIAL OILS -->
+        <div class="smallflex">
+          <div id="title_subtitle">
+            <h2>Step 1: Choose the essential oils</h2>
+            <p>
+              We recommend maximum two overall, and one of each kind - base,
+              head, and heart note
+            </p>
+          </div>
 
-<form name="customise" method="POST" data-netlify="true">
+          <div id="options1">
+            <label>
+              <input type="checkbox" name="oil" value="option1" />
+              <img src="img/cedarimg.jpg" alt="cedar_img" />
+              Cedarwood<br />
+              <p class="descr">(base note)</p>
+            </label>
 
-  <!-- STEP ONE: CHOOSE ESSENTIAL OILS -->
-<div class="smallflex">
+            <label>
+              <input type="checkbox" name="oil" value="option2" />
+              <img src="img/sandalimg.jpg" alt="sandal_img" />
+              Sandalwood<br />
+              <p class="descr">(base note)</p>
+            </label>
 
-      <div id="title_subtitle">
-        <h2>Step 1: Choose the essential oils</h2>
-        <p>We recommend maximum two overall, and one of each kind - base, head, and heart note</p>
-      </div>    
+            <label>
+              <input type="checkbox" name="oil" value="option3" />
+              <img src="img/bergamotimg.jpg" alt="bergamot_img" />
+              Bergamot<br />
+              <p class="descr">(head note)</p>
+            </label>
 
-<div id="options1">
-<label>
-    <input type="checkbox" name="oil" value="option1">
-      <img src="img/cedarimg.jpg" alt="cedar_img">
-    Cedarwood<br><p class="descr">(base note)</p>
-  </label>
+            <label>
+              <input type="checkbox" name="oil" value="option4" />
+              <img src="img/rosemimg.jpg" alt="rosemary_img" />
+              Rosemary<br />
+              <p class="descr">(head note)</p>
+            </label>
 
-<label>
-    <input type="checkbox" name="oil" value="option2">
-      <img src="img/sandalimg.jpg" alt="sandal_img">
-    Sandalwood<br><p class="descr">(base note)</p>
-  </label>
+            <label>
+              <input type="checkbox" name="oil" value="option5" />
+              <img src="img/orimg.jpg" alt="orange_img" />
+              Sweet orange<br />
+              <p class="descr">(head note)</p>
+            </label>
 
-<label>
-    <input type="checkbox" name="oil" value="option3">
-     <img src="img/bergamotimg.jpg" alt="bergamot_img">
-    Bergamot<br><p class="descr">(head note)</p>
-  </label>
+            <label>
+              <input type="checkbox" name="oil" value="option6" />
+              <img src="img/gingimg.jpg" alt="ginger_img" />
+              Ginger<br />
+              <p class="descr">(heart note)</p>
+            </label>
 
-<label>
-    <input type="checkbox" name="oil" value="option4">
-     <img src="img/rosemimg.jpg" alt="rosemary_img">
-    Rosemary<br><p class="descr">(head note)</p>
-  </label>
+            <label>
+              <input type="checkbox" name="oil" value="option7" />
+              <img src="img/lavendimg.jpg" alt="lavender_img" />
+              Lavender<br />
+              <p class="descr">(heart note)</p>
+            </label>
 
-<label>
-    <input type="checkbox" name="oil" value="option5">
-     <img src="img/orimg.jpg" alt="orange_img">
-    Sweet orange<br><p class="descr">(head note)</p>
-  </label>
+            <label>
+              <input type="checkbox" name="oil" value="option8" />
+              <img src="img/cinnimg.jpg" alt="cinnamon_img" />
+              Cinnamon<br />
+              <p class="descr">(heart note)</p>
+            </label>
+          </div>
+        </div>
 
-<label>
-    <input type="checkbox" name="oil" value="option6">
-     <img src="img/gingimg.jpg" alt="ginger_img">
-    Ginger<br><p class="descr">(heart note)</p>
-  </label>
+        <div class="subtotal">
+          <div class="subtotal_box">
+            <p>Subtotal:</p>
+          </div>
+        </div>
 
-<label>
-    <input type="checkbox" name="oil" value="option7">
-     <img src="img/lavendimg.jpg" alt="lavender_img">
-    Lavender<br><p class="descr">(heart note)</p>
-  </label>
+        <!-- STEP TWO: CHOOSE COLOR -->
+        <!-- <div class="smallflex"> -->
 
-<label>
-    <input type="checkbox" name="oil" value="option8">
-     <img src="img/cinnimg.jpg" alt="cinnamon_img">
-    Cinnamon<br><p class="descr">(heart note)</p>
-  </label>
-</div>
+        <div id="title">
+          <h2>Step 2: Choose a color</h2>
+        </div>
 
-    </div>
+        <div id="options2">
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/nocolor.jpg" alt="nocolor_img" />
+            No Color
+          </label>
 
-<div class="subtotal">
-  <div class="subtotal_box">
-    <p>Subtotal:</p>
-  </div>
-</div>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/white.jpg" alt="white_img" />
+            Arctic White
+          </label>
 
-    <!-- STEP TWO: CHOOSE COLOR -->
-<!-- <div class="smallflex"> -->
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/black.jpg" alt="black_img" />
+            Black
+          </label>
 
-  <div id="title">
-    <h2>Step 2: Choose a color</h2>
-  </div>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/pink.jpg" alt="candypink_img" />
+            Candy Pink
+          </label>
 
-<div id="options2">
-<label>  
-    <input type="radio" name="color"/> 
-    <img src="img/nocolor.jpg" alt="nocolor_img">
-    No Color
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/ultrablue.jpg" alt="ultramarineblue_img" />
+            Ultramarine Blue
+          </label>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/white.jpg" alt="white_img">
-    Arctic White
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/lightblue.jpg" alt="lightblue_img" />
+            Light Blue
+          </label>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/black.jpg" alt="black_img">
-    Black
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/purple.jpg" alt="purplepassion_img" />
+            Purple Passion
+          </label>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/pink.jpg" alt="candypink_img">
-    Candy Pink
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/orange.jpg" alt="orange_img" />
+            Orange
+          </label>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/ultrablue.jpg" alt="ultramarineblue_img">
-    Ultramarine Blue
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/rediron.jpg" alt="rediron_img" />
+            Red Iron
+          </label>
 
-<label>  
-    <input type="radio" name="color"/>
-    <img src="img/lightblue.jpg" alt="lightblue_img">
-    Light Blue
-  </label>
+          <label>
+            <input type="radio" name="color" />
+            <img src="img/yellow.jpg" alt="yellow_img" />
+            Yellow
+          </label>
+        </div>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/purple.jpg" alt="purplepassion_img">
-    Purple Passion
-  </label> 
+        <div class="subtotal">
+          <div class="subtotal_box">
+            <p>Subtotal:</p>
+          </div>
+        </div>
+        <!-- </div> -->
 
-<label> 
-    <input type="radio" name="color"/>
-    <img src="img/orange.jpg" alt="orange_img">
-    Orange
-  </label> 
+        <!-- STEP THREE: CHOOSE SHAPE -->
+        <!-- <div class="smallflex"> -->
 
-<label> 
-    <input type="radio" name="color"/>
-    <img src="img/rediron.jpg" alt="rediron_img">
-    Red Iron
-  </label> 
+        <div id="title">
+          <h2>Step 3: Choose a shape</h2>
+        </div>
 
-<label>
-    <input type="radio" name="color"/>
-    <img src="img/yellow.jpg" alt="yellow_img">
-    Yellow
-  </label>
-</div>
+        <div id="options3">
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/heart.svg" alt="heart_shape" />
+            Heart
+          </label>
 
-<div class="subtotal">
-  <div class="subtotal_box">
-    <p>Subtotal:</p>
-  </div>
-</div>
-<!-- </div> -->
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/rectangle.svg" alt="rect_shape" />
+            Rectangular
+          </label>
 
-     <!-- STEP THREE: CHOOSE SHAPE -->
-<!-- <div class="smallflex"> -->
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/round.svg" alt="round_shape" />
+            Round
+          </label>
 
-  <div id="title">
-    <h2>Step 3: Choose a shape</h2>
-  </div>
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/square.svg" alt="square_shape" />
+            Square
+          </label>
 
-<div id="options3">    
-<label> 
-    <input type="radio" name="shape"/>
-    <img src="img/heart.svg" alt="heart_shape">
-    Heart
-  </label>
-  
-<label>    
-    <input type="radio" name="shape"/>
-    <img src="img/rectangle.svg" alt="rect_shape">
-    Rectangular
-  </label>
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/star.svg" alt="star_shape" />
+            Star
+          </label>
 
-<label>
-    <input type="radio" name="shape"/>
-    <img src="img/round.svg" alt="round_shape">
-    Round
-  </label>
+          <label>
+            <input type="radio" name="shape" />
+            <img src="img/oval.svg" alt="oval_shape" />
+            Oval
+          </label>
+        </div>
 
-<label>
-    <input type="radio" name="shape"/>
-    <img src="img/square.svg" alt="square_shape">
-    Square
-  </label>
+        <div class="subtotal">
+          <div class="subtotal_box">
+            <p>Subtotal:</p>
+          </div>
+        </div>
 
-<label>
-    <input type="radio" name="shape"/>
-    <img src="img/star.svg" alt="star_shape">
-    Star
-  </label>
-
-<label>
-    <input type="radio" name="shape"/>
-    <img src="img/oval.svg" alt="oval_shape">
-    Oval
-</label>
-</div>
-
-<div class="subtotal">
-  <div class="subtotal_box">
-    <p>Subtotal:</p>
-  </div>
-</div>
-
-<div class="addtobasket">
-  <div class="addtobasket_box">
-    <button>Add to basket</button>
-  </div>
-</div>
-<!-- </div> -->
-
-</form>
-</main>  
-</body>
+        <div class="addtobasket">
+          <div class="addtobasket_box">
+            <button>Add to basket</button>
+          </div>
+        </div>
+        <!-- </div> -->
+      </form>
+    </main>
+    <footer>
+      <div>
+        <a href="#0"><img src="svg/whitelogo.svg" alt="whitelogo" /></a>
+        <p>Co-creating with your requests, needs and wishes in mind.</p>
+      </div>
+      <ul>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>Shipping & Delivery</li>
+        <li>Cookie & Privacy Policy</li>
+      </ul>
+      <div>
+        <p>
+          CustomiseMe ApS <br /><br />
+          Falen 21D, 2TV 5000 Odense C info@customiseme.dk
+          <br /><br />
+          CVR: 42657603
+        </p>
+      </div>
+      <div class="socials">
+        <p>Our socials</p>
+        <a href="https://www.facebook.com/customisemedk"
+          ><img src="svg/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/customisemedk/"
+          ><img src="svg/instagram.svg" alt="instagram"
+        /></a>
+        <br /><br />
+        <p class="copyright">Copyright &copy; 2022 CustomiseMe</p>
+      </div>
+    </footer>
+  </body>
 </html>

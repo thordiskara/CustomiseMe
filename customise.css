@@ -66,239 +66,384 @@ p {
   font-size: var(--fs-s);
 }
 
-
 /* CUSTOMISE PAGE */
 
 #customisemain {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 5rem;
-}  
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5rem;
+  margin: var(--sp-l);
+}
 
 #header {
-    grid-row: 1 / 2;
-    position: relative;
-    text-align: center;
-    margin: -4rem;
+  grid-row: 1 / 2;
+  position: relative;
+  text-align: center;
+  margin: -4rem;
 }
-  
-#customisemain h1, #customisemain h2 {
-    text-transform: uppercase;
-  }
+
+#customisemain h1,
+#customisemain h2 {
+  text-transform: uppercase;
+}
 
 #header img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}  
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 #header_text {
-    position: absolute;
-    color: var(--clr-bg);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 0px 10px #5e5d5d;
+  position: absolute;
+  color: var(--clr-bg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 10px #5e5d5d;
 }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: var(--sp-l);
-  }
-    
-  .options {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--sp-m);
-  }
-  
-  label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--sp-xs);
-    margin: 2rem 0 1rem 0;
 
-    font-family: var(--ff-ter);
-    font-size: var(--fs-s);
-    text-transform: uppercase;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: var(--sp-l);
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-xs);
+  margin: 2rem 0 1rem 0;
+
+  font-family: var(--ff-ter);
+  font-size: var(--fs-s);
+  text-transform: uppercase;
+}
+
+.smallflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+/* step one */
+
+#title_subtitle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form img {
+  display: block;
+  max-width: 25%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* step two */
+
+#steptwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+#steptwo img {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* step three */
+
+#stepthree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--sp-m);
+}
+
+#stepthree img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* HIDE CHECKBOX AND RADIO */
+[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="checkbox"] + img {
+  cursor: pointer;
+}
+
+[type="radio"] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type="checkbox"]:checked + img {
+  outline: 3px solid #faaa5f;
+  outline-offset: 2px;
+}
+
+[type="radio"]:checked + img {
+  outline: 3px solid #faaa5f;
+  outline-offset: 2px;
+}
+
+.subtotal_box {
+  background-color: var(--clr-acc);
+  padding: var(--sp-s);
+}
+
+@media only screen and (min-width: 650px) {
+  /* CHECKBOX AND RADIO GRID */
+  #options1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
   }
-  
-  .smallflex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--sp-m);
-  } 
 
+  #options2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+  }
 
-  /* step one */
-  
-  #title_subtitle {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  #options3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
   }
 
   form img {
-    display: block;
-    max-width: 25%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  /* step two */
-  
-  #steptwo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--sp-m);
-  }
-
-  #steptwo img {
     display: block;
     max-width: 40%;
     height: auto;
     border-radius: 50%;
   }
-  
-  /* step three */
-  
-  #stepthree {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--sp-m);
+}
+
+@media only screen and (min-width: 1100px) {
+  #header img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
-  #stepthree img {
+  #header_text {
+    position: absolute;
+    color: var(--clr-bg);
+    top: 50%;
+    right: -15%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* CHECKBOX AND RADIO GRID */
+  #options1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content;
+  }
+
+  #options2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content;
+  }
+
+  #options3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+  }
+
+  form img {
     display: block;
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
     border-radius: 50%;
   }
-
-  
-  /* HIDE CHECKBOX AND RADIO */
-  [type=checkbox] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  [type=radio] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* IMAGE STYLES */
-  [type=checkbox] + img {
-    cursor: pointer;
-  }
-
-  [type=radio] + img {
-    cursor: pointer;
-  }
-  
-  /* CHECKED STYLES */
-  [type=checkbox]:checked + img {
-    outline: 3px solid #faaa5f;
-    outline-offset: 2px;
-  }
-
-  [type=radio]:checked + img {
-    outline: 3px solid #faaa5f;
-    outline-offset: 2px;
-  }
-  
-.subtotal_box {
-    background-color: var(--clr-acc);
-    padding: var(--sp-s);
 }
 
+/* NAV */
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--sp-s);
+  font-family: var(--ff-sec);
+  font-size: var(--fs-s);
+}
 
-@media only screen and (min-width: 650px) {
-    
-    /* CHECKBOX AND RADIO GRID */
-    #options1 {
-      display: grid;
-      grid-template-columns:repeat(3, 1fr);
-      grid-template-rows: min-content;
-    }
+nav a {
+  color: var(--clr-pri);
+  text-decoration: none;
+}
+.navflex {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--sp-m);
+}
 
-    #options2 {
-        display: grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-rows: min-content;
-      }
+.toggle-btn {
+  background: transparent;
+  border: none;
+  display: block;
+  min-width: 60px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.close {
+  background: transparent;
+  border: none;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
 
-    #options3 {
-        display: grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-rows: min-content;
-      }  
-  
-    form img {
-      display: block;
-      max-width: 40%;
-      height: auto;
-      border-radius: 50%;
-    }
+.navicons {
+  display: none;
+}
+
+.togglebuttonflex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+nav.shown {
+  border-top: 1px solid var(--clr-pri);
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+.banner {
+  border-bottom: 1px solid var(--clr-pri);
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--clr-pri);
+  font-family: var(--ff-ter);
+  font-size: var(--fs-s);
+  color: white;
+  display: grid;
+  padding: var(--sp-l);
+  gap: var(--sp-xl);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.copyright {
+  color: gray;
+}
+
+/* Media for burgermenu */
+
+@media (min-width: 1000px) {
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
   }
-  
-  @media only screen and (min-width: 1100px) {
-    
-    #header img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }  
-    
-    #header_text {
-        position: absolute;
-        color: var(--clr-bg);
-        top: 50%;
-        right: -15%;
-        transform: translate(-50%, -50%);
-    }
-
-    /* CHECKBOX AND RADIO GRID */
-    #options1 {
-      display: grid;
-      grid-template-columns:repeat(4, 1fr);
-      grid-template-rows: min-content;
-    }
-
-    #options2 {
-        display: grid;
-        grid-template-columns:repeat(5, 1fr);
-        grid-template-rows: min-content;
-      }
-
-    #options3 {
-        display: grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-rows: min-content;
-      }  
-  
-    form img {
-      display: block;
-      max-width: 40%;
-      height: auto;
-      border-radius: 50%;
-    }
+  .navicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-s);
   }
+  .navflex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-flow: row;
+    gap: var(--sp-m);
+  }
+
+  .logo {
+    width: 6%;
+  }
+  nav {
+    display: block;
+    flex-flow: row;
+  }
+
+  /* burgermenu */
+  .toggle-btn {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  footer {
+    display: flex;
+    gap: var(--sp-l);
+    justify-content: space-between;
+  }
+  .socials {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1300px) {
+  nav ul li {
+    font-size: var(--fs-m);
+  }
+}
