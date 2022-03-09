@@ -212,6 +212,12 @@ form img {
 }
 
 /* CHECKED STYLES */
+
+form img:hover {
+    outline: 3px solid #faaa5f;
+    outline-offset: 2px;
+}
+
 [type="checkbox"]:checked + img {
   outline: 3px solid #faaa5f;
   outline-offset: 2px;
@@ -226,6 +232,16 @@ form img {
   background-color: var(--clr-acc);
   padding: var(--sp-s);
 }
+
+.basket {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+
+
 
 @media only screen and (min-width: 650px) {
   /* CHECKBOX AND RADIO GRID */
