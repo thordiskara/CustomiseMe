@@ -26,4 +26,5 @@ function showSoap(soap) {
   document.querySelector(".availability").textContent = soap.availablity;
   document.querySelector(".ingredients").textContent = soap.ingredients;
   document.querySelector(".essential").textContent = soap.essentialoils;
+  document.querySelector(".certified").textContent = soap.certified;
 }
