@@ -242,18 +242,27 @@ footer {
 
 .frame img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
 .frame a > h1 {
   position: absolute;
-  top: 220px;
+  top: 250px;
   text-align: center;
   width: 100%;
   z-index: 10;
   color: whitesmoke;
   text-decoration: none;
+}
+
+.frame a:hover h1 {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.frame a:hover img {
+  filter: brightness(80%);
 }
 
 .bestproducts,
@@ -288,19 +297,12 @@ article img {
 }
 .soapImage {
   width: 100%;
-  height: 270px;
+  height: 300px;
   object-fit: cover;
 }
 
 .soapinfo {
-  border-bottom: var(--clr-blck) 1px solid;
-}
-.soapinfor {
-  border-bottom: var(--clr-blck) 1px solid;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-  padding: 1rem;
+  margin-bottom: 0.8rem;
 }
 /* .buttonss {
   display: flex;
@@ -321,6 +323,20 @@ button {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+.buttonstyle {
+  background-color: #edb3b4;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  color: black;
+  font-family: var(--ff-sec);
+  font-size: var(--fs-xs);
+}
+
+.buttons a {
+  text-decoration: none;
 }
 
 .price {
@@ -435,6 +451,7 @@ button {
 #shopname {
   padding-top: 1rem;
   padding-left: 5rem;
+  padding-bottom: 3rem;
 }
 
 .full {
@@ -555,7 +572,7 @@ button {
   gap: 2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
 }
 
@@ -567,7 +584,7 @@ button {
 
 .soapcontainer img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -582,7 +599,7 @@ button {
 .quant {
   background-color: rgb(255, 255, 255);
   min-width: 72px;
-  min-height: 50px;
+  min-height: 48px;
   border: 1px solid rgb(217, 217, 217);
   text-align: center;
   padding: 5px 0px 5px;
@@ -598,7 +615,7 @@ button {
 .related {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -606,7 +623,7 @@ button {
 .relatedgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem 0 2rem 0;
 }
 
@@ -614,5 +631,93 @@ button {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
+  margin-top: 2rem;
 }
 
+.pricebox,
+.colorbox,
+.weightbox,
+.availbox,
+.ingredbox,
+.essentialbox,
+.certifybox {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#cer {
+  visibility: hidden;
+}
+@media screen and (max-width: 1180px) {
+  .singlesoap {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+
+  .related {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .singlesoap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .soapcontainer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #e6e8eb;
+  }
+
+  .soapcontainer img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+  .soapinfo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .basket {
+    margin-bottom: 2rem;
+  }
+
+  .related {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .relatedgrid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+
+  .relatedgrid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pricebox,
+  .colorbox,
+  .weightbox,
+  .availbox,
+  .ingredbox,
+  .essentialbox,
+  .certifybox {
+    gap: 2rem;
+  }
+  .soppingbag {
+    aspect-ratio: 1/1.2;
+    width: 13%;
+    height: 13%;
+    margin-right: 0.5rem;
+  }
+}
