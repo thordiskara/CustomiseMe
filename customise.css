@@ -67,6 +67,9 @@ p {
 }
 
 
+
+
+
 /* CUSTOMISE PAGE */
 
 #customisebody {
@@ -86,10 +89,6 @@ p {
     text-align: center;
     margin: -4rem;
 }
-
-#form {
-    grid-row: 2 / 3;
-}
   
 #customisemain h1, #customisemain h2 {
     text-transform: uppercase;
@@ -107,6 +106,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 10px #5e5d5d;
 }
   
   form {
@@ -129,30 +129,32 @@ p {
     flex-direction: column;
     align-items: center;
     gap: var(--sp-xs);
+    margin: 2rem 0 1rem 0;
 
     font-family: var(--ff-ter);
     font-size: var(--fs-s);
     text-transform: uppercase;
   }
   
-  /* step one */
-  
-  #stepone {
+  .smallflex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: var(--sp-m);
-  }
+  } 
+
+
+  /* step one */
   
   #title_subtitle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  #stepone img {
+  form img {
     display: block;
     max-width: 25%;
     height: auto;
@@ -229,15 +231,77 @@ p {
     outline-offset: 2px;
   }
   
-  
-  @media only screen and (min-width: 600px) {
+.subtotal_box {
+    background-color: var(--clr-acc);
+    padding: var(--sp-s);
+}
+
+
+
+
+@media only screen and (min-width: 650px) {
     
     /* CHECKBOX AND RADIO GRID */
-    .options {
+    #options1 {
+      display: grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows: min-content;
+    }
+
+    #options2 {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: min-content;
+      }
+
+    #options3 {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: min-content;
+      }  
+  
+    form img {
+      display: block;
+      max-width: 40%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    
+    #header img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }  
+    
+    #header_text {
+        position: absolute;
+        color: var(--clr-bg);
+        top: 50%;
+        right: -15%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* CHECKBOX AND RADIO GRID */
+    #options1 {
       display: grid;
       grid-template-columns:repeat(4, 1fr);
       grid-template-rows: min-content;
     }
+
+    #options2 {
+        display: grid;
+        grid-template-columns:repeat(5, 1fr);
+        grid-template-rows: min-content;
+      }
+
+    #options3 {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: min-content;
+      }  
   
     form img {
       display: block;
