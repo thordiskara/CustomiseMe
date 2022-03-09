@@ -643,11 +643,21 @@ button {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+@media screen and (max-width: 1180px) {
+  .singlesoap {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
 
-@media screen and (max-width: 1200px) {
+  .related {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
   .singlesoap {
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1fr;
+    grid-template-rows: 400px 1fr;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -660,7 +670,7 @@ button {
 
   .soapcontainer img {
     width: 100%;
-    height: 600px;
+    height: 400px;
     object-fit: contain;
   }
   .soapinfo {
@@ -679,11 +689,29 @@ button {
 
   .relatedgrid {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
   }
 
   .relatedgrid img {
     width: 100%;
-    height: 350px;
+    height: 220px;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pricebox,
+  .colorbox,
+  .weightbox,
+  .availbox,
+  .ingredbox,
+  .essentialbox {
+    gap: 2rem;
+  }
+  .soppingbag {
+    aspect-ratio: 1/1.2;
+    width: 13%;
+    height: 13%;
+    margin-right: 0.5rem;
   }
 }
