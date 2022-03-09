@@ -318,12 +318,14 @@ article img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  cursor: pointer;
 }
 
 button {
   background-color: #edb3b4;
   border: none;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .price {
