@@ -67,15 +67,7 @@ p {
 }
 
 
-
-
-
 /* CUSTOMISE PAGE */
-
-#customisebody {
-    background-color: var(--clr-bg);
-    margin: var(--sp-l);
-  }
 
 #customisemain {
     display: grid;
