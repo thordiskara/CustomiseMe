@@ -42,13 +42,8 @@
 
       <div id="explanation">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Pick your own ingredients and create a unique soap here!<br>
+          The process is easy; choose the essential oils you want to add, the color and the shape of the soap, add it to your basket and buy it at the checkout.
         </p>
       </div>
 
@@ -64,56 +59,56 @@
           </div>
 
           <div id="options1">
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option1" />
-              <img src="img/cedarimg.jpg" alt="cedar_img" />
+              <img src="img/cedarimg.jpg" alt="cedar_img"/>
               Cedarwood<br />
               <p class="descr">(base note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option2" />
               <img src="img/sandalimg.jpg" alt="sandal_img" />
               Sandalwood<br />
               <p class="descr">(base note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option3" />
               <img src="img/bergamotimg.jpg" alt="bergamot_img" />
               Bergamot<br />
               <p class="descr">(head note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option4" />
               <img src="img/rosemimg.jpg" alt="rosemary_img" />
               Rosemary<br />
               <p class="descr">(head note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option5" />
               <img src="img/orimg.jpg" alt="orange_img" />
               Sweet orange<br />
               <p class="descr">(head note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option6" />
               <img src="img/gingimg.jpg" alt="ginger_img" />
               Ginger<br />
               <p class="descr">(heart note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option7" />
               <img src="img/lavendimg.jpg" alt="lavender_img" />
               Lavender<br />
               <p class="descr">(heart note)</p>
             </label>
 
-            <label>
+            <label class="oil_check">
               <input type="checkbox" name="oil" value="option8" />
               <img src="img/cinnimg.jpg" alt="cinnamon_img" />
               Cinnamon<br />
@@ -124,7 +119,7 @@
 
         <div class="subtotal">
           <div class="subtotal_box">
-            <p>Subtotal:</p>
+            <p>Subtotal: 55 DKK</p>
           </div>
         </div>
 
@@ -199,7 +194,7 @@
 
         <div class="subtotal">
           <div class="subtotal_box">
-            <p>Subtotal:</p>
+            <p>Subtotal: 55 DKK</p>
           </div>
         </div>
         <!-- </div> -->
@@ -251,15 +246,23 @@
 
         <div class="subtotal">
           <div class="subtotal_box">
-            <p>Subtotal:</p>
+            <p>Subtotal: 55 DKK</p>
           </div>
         </div>
 
-        <div class="addtobasket">
-          <div class="addtobasket_box">
-            <button>Add to basket</button>
-          </div>
-        </div>
+        <div>
+        <button class="basket">ADD TO BASKET</button>
+        <input
+          class="quant"
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="10"
+          value="1"
+        />
+      </div>
+
         <!-- </div> -->
       </form>
     </main>
@@ -294,5 +297,8 @@
         <p class="copyright">Copyright &copy; 2022 CustomiseMe</p>
       </div>
     </footer>
+
+<script src="customise.js"></script>
+
   </body>
 </html>
