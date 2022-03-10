@@ -11,6 +11,7 @@
   --ff-ter: "Lexend", sans-serif;
 
   /* For font seizing */
+  --fs-xxs: 0.5rem;
   --fs-xs: 0.8rem;
   --fs-s: 1.2rem;
   --fs-m: clamp(1.1rem, 1vw + 0.8rem, 1.8rem);
@@ -198,6 +199,10 @@ footer {
     gap: var(--sp-m);
   }
 
+  nav ul li {
+    font-size: var(--fs-s);
+  }
+
   .logo {
     width: 6%;
   }
@@ -225,7 +230,7 @@ footer {
 
 @media (min-width: 1300px) {
   nav ul li {
-    font-size: var(--fs-m);
+    font-size: var(--fs-s);
   }
 }
 
