@@ -240,7 +240,21 @@ form img:hover {
     cursor: pointer;
   }
 
-
+  .quant {
+    background-color: rgb(255, 255, 255);
+    min-width: 72px;
+    min-height: 48px;
+    border: 1px solid rgb(217, 217, 217);
+    text-align: center;
+    padding: 5px 0px 5px;
+    align-items: center;
+    transition: all 0.15s linear 0s;
+    color: rgb(0, 0, 0);
+  }
+  
+  .quant:hover {
+    border-color: rgb(119, 118, 120);
+  }
 
 
 @media only screen and (min-width: 650px) {
