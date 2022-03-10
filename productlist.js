@@ -19,7 +19,7 @@ function showSoaplist(data) {
   data.forEach(showSoap);
 }
 function showSoap(soap) {
-  // grabbing the tamplate
+  // grabbing the template
   const template = document.querySelector("#productlistTemplate").content;
   // copying the template
   const copy = template.cloneNode(true);
@@ -27,9 +27,6 @@ function showSoap(soap) {
   copy.querySelector(".productname").textContent = `${soap.name}`;
   copy.querySelector("span").textContent = `${soap.price}`;
   copy.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
-  copy
-    .querySelector(".buttonstyle")
-    .setAttribute("href", `product.html?id=${soap._id}`);
 
   // grabing parent
   const parent = document.querySelector("main");
