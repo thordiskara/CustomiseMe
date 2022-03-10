@@ -109,8 +109,7 @@ nav a {
   background: transparent;
   border: none;
   display: block;
-  min-width: 60px;
-  min-height: 44px;
+  min-height: 30px;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -118,8 +117,8 @@ nav a {
   background: transparent;
   border: none;
   display: block;
-  min-width: 44px;
-  min-height: 44px;
+
+  min-height: 30px;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -164,7 +163,7 @@ footer {
   font-size: var(--fs-s);
   color: white;
   display: grid;
-  padding: var(--sp-l);
+  padding: var(--sp-m);
   gap: var(--sp-xl);
   grid-template-columns: 1fr 1fr;
   align-items: center;
