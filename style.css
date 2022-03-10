@@ -300,6 +300,9 @@ article img {
   height: 300px;
   object-fit: cover;
 }
+.soapImage:hover {
+  opacity: 0.5;
+}
 
 .soapinfo {
   margin-bottom: 0.8rem;
