@@ -45,7 +45,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.body {
+body {
+  background-color: var(--clr-bg);
   font-family: var(--ff-ter);
 }
 
@@ -231,6 +232,19 @@ form img:hover {
 .subtotal_box {
   background-color: var(--clr-acc);
   padding: var(--sp-s);
+}
+
+
+#allergies label {
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  gap: var(--sp-xs);
+  margin: 1rem 0 1rem 0;
+
+  font-family: var(--ff-ter);
+  font-size: var(--fs-s);
+  text-transform: uppercase;
 }
 
 .basket {
