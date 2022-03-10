@@ -71,7 +71,7 @@ h3 {
 h4 {
   font-family: var(--ff-sec);
   font-weight: normal;
-  font-size: var(--fs-xs);
+  font-size: 0.9rem;
 }
 
 p {
@@ -348,7 +348,7 @@ button {
 
 .price {
   text-align: left;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-s);
 }
 
 .soppingbag {
@@ -650,6 +650,16 @@ button {
 .certifybox {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+
+.color,
+.weight,
+.availability,
+.ingredients,
+.essential,
+.certified {
+  font-size: var(--fs-xs);
 }
 
 #cer {
@@ -708,6 +718,10 @@ button {
     width: 100%;
     height: 220px;
     object-fit: cover;
+  }
+  .related .productname,
+  .related .price {
+    font-size: 0.9rem;
   }
 }
 
