@@ -214,17 +214,17 @@ form img {
 /* CHECKED STYLES */
 
 form img:hover {
-    outline: 3px solid #faaa5f;
+    outline: 3px solid #EDB3B4;
     outline-offset: 2px;
 }
 
 [type="checkbox"]:checked + img {
-  outline: 3px solid #faaa5f;
+  outline: 3px solid #EDB3B4;
   outline-offset: 2px;
 }
 
 [type="radio"]:checked + img {
-  outline: 3px solid #faaa5f;
+  outline: 3px solid #EDB3B4;
   outline-offset: 2px;
 }
 
